@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">EditCommentDialog</string>
+    <string name="common_hide">说点什么吧...</string>
+    <string name="no_net_message">无网络连接，请稍后重试</string>
+    <string name="mpcommon_title">说点什么吧</string>
+    <string name="mpcommon_message_too_long">评论太长啦</string>
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_comment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:minHeight="50dp"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_e8e8e8" />
+    <ImageView
+        android:id="@+id/iv_send_comment_user"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_send"
+        android:layout_width="62dp"
+        android:layout_height="26dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="14dp"
+        android:background="@drawable/stroke_f0f0f0_radius_14"
+        android:gravity="center"
+        android:text="发布"
+        android:textColor="@color/color_bdbdbd"
+        android:visibility="visible" />
+
+    <com.demo.editcommentdialog.view.CatchKeyBackEditText
+        android:id="@+id/edit_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_toLeftOf="@id/tv_send"
+        android:layout_toRightOf="@id/iv_send_comment_user"
+        android:background="@null"
+        android:gravity="center_vertical"
+        android:hint="@string/common_hide"
+        android:inputType="textMultiLine"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/color_23232b"
+        android:textColorHint="#97979C"
+        android:textCursorDrawable="@drawable/common_edit_cursor_color"
+        android:textSize="14dp" />
+</RelativeLayout>
